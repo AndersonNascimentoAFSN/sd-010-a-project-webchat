@@ -10,6 +10,7 @@
 <body>
   <nav>
     <h1 class="text-center"><span>WEBCHAT</span></h1>
+    <h2 id="user-nickname" data-testid="online-user"></h2>
   </nav>
   <div class="container">
     <div class="row justify-content-between">
@@ -19,8 +20,8 @@
       </div>
       <div class="col-sm-4 border rounded-3 bg-light">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="nickname" id="nickname-input">
-          <button class="btn btn-outline-secondary" type="button" id="nickname-button">Salvar</button>
+          <input data-testid="nickname-box" type="text" class="form-control" placeholder="nickname" id="nickname-input">
+          <button data-testid="nickname-button" class="btn btn-outline-secondary" type="button" id="nickname-button">Salvar</button>
         </div>
         <ul>
           <li>usuário 1</li>
@@ -29,8 +30,8 @@
     </div>
 
     <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="mensagem"  id="input-message">
-      <button class="btn btn-outline-secondary" type="button" id="send-message">Enviar</button>
+      <input data-testid="message-box" type="text" class="form-control" placeholder="mensagem"  id="input-message">
+      <button data-testid="send-button" class="btn btn-outline-secondary" type="button" id="send-message">Enviar</button>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
